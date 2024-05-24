@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("../fonts/PT_Sans_Caption/PTSansCaption-Regular.ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("../fonts/PT_Sans_Caption/PTSansCaption-Bold.ttf");
+  font-weight: bold;
+}
+
+header {
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4caf50;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "PT Sans Caption";
+  font-weight: normal;
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.purchase-button {
+  background-color: #fff;
+  color: rgba(61, 186, 58, 255);
+  border: 2px solid rgba(61, 186, 58, 255);
+  border-radius: 50px;
+  padding: 10px 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.purchase-button:hover {
+  background-color: #4caf50;
+  color: #fff;
+}
