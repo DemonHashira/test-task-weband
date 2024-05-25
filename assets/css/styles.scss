@@ -4,6 +4,7 @@ $ease: ease;
 $color-green: rgb(61, 186, 58);
 $color-white: #fff;
 $color-black: #000;
+$color-arrow: #bfa387;
 
 *,
 *::before,
@@ -100,29 +101,29 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: $font-family;
-}
 
-.navigation-container {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+  .navigation-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 
-.purchase-button {
-  background-color: $color-white;
-  color: $color-green;
-  border: 2px solid $color-green;
-  border-radius: 50px;
-  padding: 10px 40px;
-  cursor: pointer;
-  transition: background-color $transition-time $ease,
-    color $transition-time $ease;
-  font-weight: bold;
-  font-size: 16px;
+    .purchase-button {
+      background-color: $color-white;
+      color: $color-green;
+      border: 2px solid $color-green;
+      border-radius: 50px;
+      padding: 10px 40px;
+      cursor: pointer;
+      transition: background-color $transition-time $ease,
+        color $transition-time $ease;
+      font-weight: bold;
+      font-size: 16px;
 
-  &:hover {
-    background-color: $color-green;
-    color: $color-white;
+      &:hover {
+        background-color: $color-green;
+        color: $color-white;
+      }
+    }
   }
 }
 
@@ -152,6 +153,7 @@ main {
       margin: 0;
       font-family: $font-family;
       font-weight: bold;
+      line-height: 1.2;
     }
 
     p {
@@ -193,40 +195,40 @@ main {
         align-items: center;
 
         i:nth-child(1) {
-          color: #bfa387;
+          color: $color-arrow;
           font-size: 25px;
         }
 
         i:nth-child(2) {
-          color: #d3b495ba;
+          color: rgba($color-arrow, 0.5);
           font-size: 20px;
         }
 
         i:nth-child(3) {
-          color: #fff0e2;
+          color: rgba($color-arrow, 0.3);
           font-size: 15px;
         }
       }
     }
   }
-}
 
-.bag-left,
-.bag-right,
-.bag-middle {
-  position: absolute;
-  bottom: 0;
-}
+  .bag-left,
+  .bag-right,
+  .bag-middle {
+    position: absolute;
+    bottom: 0;
+  }
 
-.bag-left {
-  left: 0;
-  width: 200px;
-  z-index: 1;
-}
+  .bag-left {
+    left: 0;
+    width: 200px;
+    z-index: 1;
+  }
 
-.bag-right {
-  right: 0;
-  width: 300px;
+  .bag-right {
+    right: 0;
+    width: 300px;
+  }
 }
 
 @keyframes fadeIn {

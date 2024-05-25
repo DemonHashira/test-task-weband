@@ -85,14 +85,12 @@ header nav ul li a:hover {
   align-items: center;
   font-family: "PT Sans Caption";
 }
-
-.navigation-container {
+.header-container .navigation-container {
   display: flex;
   align-items: center;
   gap: 30px;
 }
-
-.purchase-button {
+.header-container .navigation-container .purchase-button {
   background-color: #fff;
   color: rgb(61, 186, 58);
   border: 2px solid rgb(61, 186, 58);
@@ -103,7 +101,7 @@ header nav ul li a:hover {
   font-weight: bold;
   font-size: 16px;
 }
-.purchase-button:hover {
+.header-container .navigation-container .purchase-button:hover {
   background-color: rgb(61, 186, 58);
   color: #fff;
 }
@@ -132,6 +130,7 @@ main {
   margin: 0;
   font-family: "PT Sans Caption";
   font-weight: bold;
+  line-height: 1.2;
 }
 .detox-woman .woman-text p {
   font-size: 2rem;
@@ -170,28 +169,25 @@ main {
   font-size: 25px;
 }
 .detox-woman .woman-scroll .scroll-container .scroll-icons i:nth-child(2) {
-  color: rgba(211, 180, 149, 0.7294117647);
+  color: rgba(191, 163, 135, 0.5);
   font-size: 20px;
 }
 .detox-woman .woman-scroll .scroll-container .scroll-icons i:nth-child(3) {
-  color: #fff0e2;
+  color: rgba(191, 163, 135, 0.3);
   font-size: 15px;
 }
-
-.bag-left,
-.bag-right,
-.bag-middle {
+.detox-woman .bag-left,
+.detox-woman .bag-right,
+.detox-woman .bag-middle {
   position: absolute;
   bottom: 0;
 }
-
-.bag-left {
+.detox-woman .bag-left {
   left: 0;
   width: 200px;
   z-index: 1;
 }
-
-.bag-right {
+.detox-woman .bag-right {
   right: 0;
   width: 300px;
 }
