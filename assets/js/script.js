@@ -1,13 +1,24 @@
 (function () {
   window.onload = function () {
+    scrollToInfo();
     forProductNavigationClickHandler();
   };
 })();
 
 const selectors = {
+  scrollToInfo: ".js-scroll-info",
+  productInfoContainer: ".for-product",
   productNavigation: ".product-info-details",
   productText: ".product-info-text",
 };
+
+function scrollToInfo() {
+  const scrollToInfo = document.querySelector(selectors.scrollToInfo);
+  scrollToInfo.addEventListener("click", () => {
+    const info = document.querySelector(selectors.productInfoContainer);
+    info.scrollIntoView({ behavior: "smooth" });
+  });
+}
 
 function forProductNavigationClickHandler() {
   const productNavigation = document.querySelector(selectors.productNavigation);
