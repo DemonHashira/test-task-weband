@@ -50,12 +50,17 @@ select {
 }
 .container {
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 .list-style-none {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+nav {
+  cursor: pointer;
 }
 
 header {
@@ -180,9 +185,7 @@ main {
   color: rgba(191, 163, 135, 0.3);
   font-size: 15px;
 }
-.detox-woman .bag-left,
-.detox-woman .bag-right,
-.detox-woman .bag-middle {
+.detox-woman .bag-left, .detox-woman .bag-right, .detox-woman .bag-middle {
   position: absolute;
   bottom: 0;
 }
@@ -201,6 +204,10 @@ main {
   padding: 60px 0;
   display: flex;
   justify-content: space-around;
+}
+.for-product-info {
+  max-width: 480px;
+  margin-top: 50px;
 }
 .for-product .about-bag-container {
   background-color: #fff9f0;
@@ -226,12 +233,13 @@ main {
 }
 .for-product .product-info-details .product-info-nav li {
   position: relative;
+  margin-bottom: 25px;
 }
 .for-product .product-info-details .product-info-nav li::before {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 2px;
   width: 100%;
   height: 1px;
   background-color: #bababa;
@@ -242,6 +250,7 @@ main {
 .for-product .product-info-details .product-info-nav li.active::before {
   background-color: rgb(61, 186, 58);
   height: 5px;
+  top: 0;
 }
 .for-product .product-info-details .product-info-nav li:first-child p {
   margin-left: 0;
@@ -255,10 +264,17 @@ main {
   font-weight: bold;
   color: #bababa;
 }
+.for-product .product-info-details .product-info-text li {
+  display: none;
+}
+.for-product .product-info-details .product-info-text li.active {
+  display: block;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(-30px);
   }
   to {
     opacity: 1;
