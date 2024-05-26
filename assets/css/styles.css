@@ -49,7 +49,7 @@ select {
   font-weight: bold;
 }
 .container {
-  max-width: 1400px;
+  max-width: 1116px;
   margin: 0 auto;
   display: block;
 }
@@ -58,6 +58,32 @@ select {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  border: 2px solid rgb(61, 186, 58);
+  padding: 6px 40px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  font-size: 16px;
+}
+.btn-outline {
+  color: rgb(61, 186, 58);
+  background-color: #fff;
+}
+.btn-outline:hover {
+  background-color: rgb(61, 186, 58);
+  color: #fff;
+}
+.btn-filled {
+  color: #fff;
+  background-color: rgb(61, 186, 58);
+}
+.btn-filled:hover {
+  background-color: #fff;
+  color: rgb(61, 186, 58);
 }
 
 nav {
@@ -102,21 +128,6 @@ header nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 30px;
-}
-.header-container .navigation-container .purchase-button {
-  background-color: #fff;
-  color: rgb(61, 186, 58);
-  border: 2px solid rgb(61, 186, 58);
-  border-radius: 50px;
-  padding: 10px 40px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-weight: bold;
-  font-size: 16px;
-}
-.header-container .navigation-container .purchase-button:hover {
-  background-color: rgb(61, 186, 58);
-  color: #fff;
 }
 
 main {
@@ -312,6 +323,30 @@ main {
 .reasons-detox .reasons-container .reasons p {
   margin-top: 20px;
   flex: 0.9;
+}
+
+.bmi-container {
+  animation: fadeIn 1s ease forwards;
+  padding-top: 110px;
+  position: relative;
+}
+.bmi-container .bmi-content {
+  background-color: #fdf8f1;
+  width: 85%;
+  padding: 56px 230px 56px 90px;
+  border-radius: 22px;
+}
+.bmi-container .bmi-content h3 {
+  font-size: 25px;
+}
+.bmi-container .bmi-content h3,
+.bmi-container .bmi-content p {
+  margin-bottom: 27px;
+}
+.bmi-container img {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @keyframes fadeIn {
