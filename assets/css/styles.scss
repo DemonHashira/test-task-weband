@@ -379,8 +379,15 @@ main {
         outline: 3px solid $color-green;
       }
 
+      .img-container {
+        display: flex;
+        align-items: flex-end;
+        flex: 1.1;
+      }
+
       p {
         margin-top: 20px;
+        flex: 0.9;
       }
     }
   }

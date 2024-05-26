@@ -304,8 +304,14 @@ main {
 .reasons-detox .reasons-container .reasons:hover {
   outline: 3px solid rgb(61, 186, 58);
 }
+.reasons-detox .reasons-container .reasons .img-container {
+  display: flex;
+  align-items: flex-end;
+  flex: 1.1;
+}
 .reasons-detox .reasons-container .reasons p {
   margin-top: 20px;
+  flex: 0.9;
 }
 
 @keyframes fadeIn {
