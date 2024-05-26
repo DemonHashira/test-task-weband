@@ -74,6 +74,32 @@ select {
   margin: 0;
 }
 
+.list-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.text-10 {
+  font-size: 10px;
+}
+
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
+.footer-info-text {
+  margin-bottom: 23px;
+}
+
+.align-text-center {
+  text-align: center;
+}
+
 .btn {
   cursor: pointer;
   border: 2px solid $color-green;
@@ -437,7 +463,7 @@ main {
 }
 
 .try-detox {
-  margin: 165px 0;
+  margin-top: 165px;
   background-color: $color-background;
   animation: fadeIn 1s $ease forwards;
 
@@ -513,6 +539,37 @@ main {
       .text-p {
         font-size: 25px;
       }
+    }
+  }
+}
+
+footer {
+  margin: 55px 0 120px;
+  animation: fadeIn 1s $ease forwards;
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 33px;
+
+    .footer-nav ul,
+    .social ul {
+      gap: 36px;
+      color: $color-disabled;
+    }
+
+    .payments,
+    .shipment {
+      p {
+        margin-bottom: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .copyright {
+      color: $color-disabled;
     }
   }
 }
