@@ -463,6 +463,9 @@ footer .footer-container .shipment p {
 footer .footer-container .copyright {
   color: #bababa;
 }
+footer .visa-payment {
+  margin-top: 5px;
+}
 
 @keyframes fadeIn {
   from {
