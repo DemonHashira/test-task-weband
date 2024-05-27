@@ -2,7 +2,7 @@
 This repository contains the test task for the company Weband.
 # Detox Health & Effective Slimming Landing Page
 
-This project is a landing page for a Detox Health and Effective Slimming program. The page is designed to provide visitors with information about the program, its benefits, and how it works.
+This project is a landing page for a Detox Health and Effective Slimming product. The page is designed to provide visitors with information about the product and its benefits.
 
 The landing page is built using HTML, CSS, and JavaScript. It features a clean and user-friendly design.
 
