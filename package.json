@@ -4,11 +4,15 @@
   "description": "Test task for the company Weband",
   "main": "index.js",
   "scripts": {
+    "start": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.77.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }
