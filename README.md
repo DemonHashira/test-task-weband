@@ -1,9 +1,5 @@
 # Test Task for Weband
-
 This repository contains the test task for the company Weband.
-
-## Project Description
-
 # Detox Health & Effective Slimming Landing Page
 
 This project is a landing page for a Detox Health and Effective Slimming program. The page is designed to provide visitors with information about the program, its benefits, and how it works.
@@ -24,6 +20,6 @@ cd test-task-weband
 # Install dependencies
 npm install
 
-# Start the local development server
+# Start the lite-server which will run the index.html file with live-reload
 npm start
 ```
